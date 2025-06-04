@@ -4,10 +4,10 @@ import pandasai as pai
 from pandasai_openai import AzureOpenAI
 import matplotlib.pyplot as plt
 
-AZURE_API_KEY       = "abf9b7951ac44ec187265d7054b8e804"
-AZURE_ENDPOINT      = "https://corp-openai-poc-tas-sm-01.openai.azure.com/"
-AZURE_DEPLOYMENT    = "gpt-4o"
-AZURE_API_VERSION   = "2024-08-01-preview"
+AZURE_API_KEY       = ""
+AZURE_ENDPOINT      = ""
+AZURE_DEPLOYMENT    = ""
+AZURE_API_VERSION   = ""
 
 llm = AzureOpenAI(
     api_token=AZURE_API_KEY,
