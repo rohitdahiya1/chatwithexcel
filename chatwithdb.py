@@ -11,10 +11,10 @@ class MyVanna(ChromaDB_VectorStore, OpenAI_Chat):
     def __init__(self, config=None):
         # Azure OpenAI client initialization
         azure_client = AzureOpenAI(
-            api_key="abf9b7951ac44ec187265d7054b8e804",
-            api_version="2024-08-01-preview",
-            azure_endpoint="https://corp-openai-poc-tas-sm-01.openai.azure.com/",
-            azure_deployment="gpt-4o"
+            api_key="",
+            api_version="",
+            azure_endpoint="",
+            azure_deployment=""
         )
 
         ChromaDB_VectorStore.__init__(self, config=config)
@@ -25,10 +25,10 @@ class MyVanna(ChromaDB_VectorStore, OpenAI_Chat):
 vn = MyVanna(config={'model': 'gpt-4o'})
 
 
-SERVER = 'it-genaisupport.database.windows.net'
-USERNAME = 'it-genaisupport'
-PASSWORD = 'itgenai@123'
-DATABASE = 'it-genaisupport'
+SERVER = ''
+USERNAME = ''
+PASSWORD = ''
+DATABASE = ''
 
 
 def connect_to_mssql_with_pymssql():
