@@ -5,7 +5,7 @@ import pandasai as pai
 import matplotlib.pyplot as plt
 from pandasai_litellm.litellm import LiteLLM
 
-## striclty requires python less than 3.12, either use 3.9, 3.10 or 3.11
+## strictly requires python less than 3.12, either use 3.9, 3.10 or 3.11
 st.set_page_config(page_title="Country Sales Chat (Upload Your Own)", layout="centered")
 st.title("🌐 Country Sales Chat (Upload Your Own)")
 
