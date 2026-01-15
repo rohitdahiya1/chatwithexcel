@@ -1,0 +1,5 @@
+pandasai-openai==0.1.6
+pandasai==3.0.0
+streamlit==1.53.0
+openpyxl==3.1.5
+pandasai-litellm==0.0.1
