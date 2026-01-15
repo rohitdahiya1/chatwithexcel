@@ -1,8 +1,10 @@
 import streamlit as st
 import pandas as pd
 import pandasai as pai
-from pandasai_openai import AzureOpenAI
+# from pandasai_openai import AzureOpenAI
 import matplotlib.pyplot as plt
+from pandasai_litellm.litellm import LiteLLM
+
 
 st.set_page_config(page_title="Country Sales Chat (Upload Your Own)", layout="centered")
 st.title("🌐 Country Sales Chat (Upload Your Own)")
@@ -15,17 +17,21 @@ st.markdown(
     """
 )
 
-AZURE_API_KEY       = ""
-AZURE_ENDPOINT      = ""
-AZURE_DEPLOYMENT    = ""
-AZURE_API_VERSION   = ""
+# AZURE_API_KEY       = ""
+# AZURE_ENDPOINT      = ""
+# AZURE_DEPLOYMENT    = ""
+# AZURE_API_VERSION   = ""
 
-llm = AzureOpenAI(
-    api_token=AZURE_API_KEY,
-    azure_endpoint=AZURE_ENDPOINT,
-    deployment_name=AZURE_DEPLOYMENT,
-    api_version=AZURE_API_VERSION
-)
+
+
+# llm = AzureOpenAI(
+#     api_token=AZURE_API_KEY,
+#     azure_endpoint=AZURE_ENDPOINT,
+#     deployment_name=AZURE_DEPLOYMENT,
+#     api_version=AZURE_API_VERSION
+# )
+
+llm = LiteLLM(model="gemini/gemini-2.5-flash", api_key="")
 pai.config.set({"llm": llm})
 
 # ——————————————
